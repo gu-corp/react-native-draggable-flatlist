@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "typecheck": "tsc --skipLibCheck --noEmit",
-    "build": "bob build"
+    "build": "bob build",
+    "prepare": "npm run build"
   },
   "husky": {
     "hooks": {

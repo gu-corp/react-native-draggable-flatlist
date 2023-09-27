@@ -24,6 +24,7 @@ export const DEFAULT_PROPS = {
   dragHitSlop: 0 as PanGestureHandlerProperties["hitSlop"],
   activationDistance: 0,
   dragItemOverflow: false,
+  enabledPanGestureHandler: true,
 };
 
 export const isIOS = Platform.OS === "ios";

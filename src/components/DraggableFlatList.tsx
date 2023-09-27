@@ -92,6 +92,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
     dragHitSlop = DEFAULT_PROPS.dragHitSlop,
     scrollEnabled = DEFAULT_PROPS.scrollEnabled,
     activationDistance: activationDistanceProp = DEFAULT_PROPS.activationDistance,
+    enabledPanGestureHandler = DEFAULT_PROPS.enabledPanGestureHandler,
   } = props;
 
   let [activeKey, setActiveKey] = useState<string | null>(null);
