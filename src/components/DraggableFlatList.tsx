@@ -389,6 +389,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
           <ScrollOffsetListener
             scrollOffset={scrollOffset}
             onScrollOffsetChange={([offset]) => {
+              console.log("===============", [offset]);
               scrollOffsetRef.current = offset;
               props.onScrollOffsetChange?.(offset);
             }}
