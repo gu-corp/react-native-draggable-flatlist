@@ -386,17 +386,10 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
           //@ts-ignore
           onClick={onContainerTouchEnd}
         >
-          <ScrollOffsetListener
-            scrollOffset={scrollOffset}
-            onScrollOffsetChange={([offset]) => {
-              scrollOffsetRef.current = offset;
-              props.onScrollOffsetChange?.(offset);
-            }}
-          />
           {!!props.renderPlaceholder && (
             <PlaceholderItem renderPlaceholder={props.renderPlaceholder} />
           )}
-          <AnimatedFlatList
+          <FlatList
             {...props}
             CellRendererComponent={CellRendererComponent}
             ref={flatListRef}
